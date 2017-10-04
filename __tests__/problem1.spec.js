@@ -38,8 +38,9 @@ describe('HTML supports responsive design', () => {
 
   test('HTML is otherwise unchanged', () => {
     let body = $.html('body');
-    expect(md5(body)).toEqual('0e47336f6b22a229bd0eb14addcc1d2d');
-    console.log(md5(body));
+    let nospace = body.replace(/\s/g, ''); //strip all whitespace to account for platform differences
+    // console.log(md5(nospace));
+    expect(md5(nospace)).toEqual('b29d2692ef3051fa3e1361361a616801');
   });
 });
 
