@@ -30,7 +30,7 @@ Instructions for achieving this appearance are detailed below:
 
     - The `body` should have `.5rem` of space around its content. The background should be a nice blue (`#93b8d7`), and the text content `white`.
 
-    - The "navigation" icon links (top-right corner) should also be `white` and increased in size to `2.5rem`. Add `.5em` of space between each one (the space is measured in `em` so it wil adjust with the icon sizes!)
+    - The "navigation" icon links (top-left corner) should also be `white` and increased in size to `2.5rem`. Add `.5em` of space between each one (the space is measured in `em` so it wil adjust with the icon sizes!)
 
         Additionally, the "social media" links should **not** be shown at this screen size. _Hint_: use the `display` property.
     
@@ -50,7 +50,7 @@ Instructions for achieving this appearance are detailed below:
 
     - At this size, the body's background should change to an image (`splash-md.jpg` found in the `img/` folder). The image should be positioned in the `center` and `cover` the background.
 
-    - Because there is now an image, you should also display the image credit (the footer) at this size.
+    - Because there is now an image, you should also display the image credit (the footer) at this size. The footer should be `fixed` to the bottom right corner of the screen.
 
     - The background image can make the text a little hard to read. Improve this by adding a [text-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow). The shadow should have `1px` offset in each direction, and be colored a very dark blue `#153c43`.
 
