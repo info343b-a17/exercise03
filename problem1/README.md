@@ -48,7 +48,7 @@ Instructions for achieving this appearance are detailed below:
 
 3. Add another _media query_ so that the styling changes on devices with a screen width of **`768px` or greater**.
 
-    - At this size, the body's background should change to an image (`splash-md.jpg` found in the `img/` folder). The image should be positioned in the `center` and `cover` the background.
+    - At this size, the body's background should change to an image (`splash-md.jpg` found in the `img/` folder). The image should be positioned in the `center` and `cover` the background. (You can make the page's `html` fill 100% of the viewport to ensure that the image covers the page even on narrow devices).
 
     - Because there is now an image, you should also display the image credit (the footer) at this size. The footer should be `fixed` to the bottom right corner of the screen.
 

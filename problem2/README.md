@@ -28,7 +28,7 @@ Instructions for achieving this appearance are detailed below:
 
 2. Both the `header` content and the `main` content should be inside of Bootstrap [containers](https://getbootstrap.com/docs/4.0/layout/overview/#containers) to give them appropriate padding. Note that this step (and the entire exercise) may require you to "wrap" groups of elements into `div`s.
 
-2. The header should be a [Jumbotron](https://getbootstrap.com/docs/4.0/components/jumbotron/) component.
+3. The header should be a [Jumbotron](https://getbootstrap.com/docs/4.0/components/jumbotron/) component.
 
     - The "subtitle" should be stand out as a [lead](https://getbootstrap.com/docs/4.0/content/typography/#lead)
 
@@ -36,11 +36,11 @@ Instructions for achieving this appearance are detailed below:
 
     - The header jumbotron should be [colored](https://getbootstrap.com/docs/4.0/utilities/colors/) with a "dark" background and "white" text.
 
-3. Each of the "cards" indicated in the HTML should be styled as a [Card](https://getbootstrap.com/docs/4.0/components/card/) component. Yes, this means you will need to make the same set of changes 4 times... consider it practice!
+4. Each of the "cards" indicated in the HTML should be styled as a [Card](https://getbootstrap.com/docs/4.0/components/card/) component. Yes, this means you will need to make the same set of changes 4 times... consider it practice!
 
     - Each card's content should be have [appropriate padding](https://getbootstrap.com/docs/4.0/components/card/#blocks).
 
-    - Use the `.card-title` and `.card-text` classes to style the card's title and text respectively.
+    - Use the `.card-title` and `.card-text` classes to style the card's title and text respectively. Note that the image is **not** a "card image" (at the top of the card), but rather should be content that is included in the card's "body".
 
     - The "Play" links should be styled as [dark-colored buttons](https://getbootstrap.com/docs/4.0/components/buttons/) (but they should remain links!)
 
@@ -48,15 +48,17 @@ Instructions for achieving this appearance are detailed below:
 
     - Also give each _`.card`_ 1.5 "spacers" worth of _bottom margin_ (a spacing size of `4`). This will put space between the cards.
 
-4. By default the cards will be lined up in a 1x4 stack. However, on larger devices they should be arranged in a 2x2 or 4x1 grid. To support this, place each of the cards into a single `.row` of a Bootstrap [Grid](https://getbootstrap.com/docs/4.0/layout/grid/).
+5. By default the cards will be lined up in a 1x4 stack. However, on larger devices they should be arranged in a 2x2 or 4x1 grid. To support this, place each of the cards into a single `.row` of a Bootstrap [Grid](https://getbootstrap.com/docs/4.0/layout/grid/).
 
     - On _medium_ or larger screens, each card should take up 1/2 of the row (e.g., 6 "columns"). On _extra-large_ or larger screens, each card should take up 1/4 of the row.
 
-    - You can make each card the same "height" on larger displays by make each card it's own [flexbox container](https://getbootstrap.com/docs/4.0/utilities/flex/) (e.g., via a utility class that gives the `display:flex` property). This will cause the content to "fill" the parent element (which is the `.row`!)
+    - Important: think about each "card" as being the _content_ of the grid column, rather than the grid column _also_ being a card. That is, each grid column should _contain_ a "card" as a child element. 
 
-5. When there is sufficient room (e.g., on _small_, _medium_, or _large_ displays), the image icon should sit to the left side of the text. The easiest way to do this to make the **body of the card** into _another_ grid! Then you can use the responsive sizing utilities to put the image into a different "column" than the rest of the content!
+    - You can make each card the same "height" on larger displays by make each grid column it's own [flexbox container](https://getbootstrap.com/docs/4.0/utilities/flex/) (e.g., via a utility class that gives the `display:flex` property). This will cause the content (the `.card`) to "fill" the parent element (which is the `.row`!)
 
-    - _For each card_, you will need to wrap the content inside of another `.row`. This row should have two child "columns": one containing the `<img>`, and one containing the rest of the content.
+6. When there is sufficient room (e.g., on _small_, _medium_, or _large_ displays), the image icon should sit to the left side of the text. The easiest way to do this to make the **body of the card** into _another_ grid! Then you can use the responsive sizing utilities to put the image into a different "column" than the rest of the content!
+
+    - _For each card_, you will need to wrap the card's body content inside of another `.row` (think about the card body as having a grid inside of it). This row should have two child "columns": one containing the `<img>`, and one containing the rest of the content.
 
     - On _small_ or larger displays, the image column should have an `auto` calculated width, and the text column should have a width that takes up the remaining space.
 
