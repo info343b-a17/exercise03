@@ -1,5 +1,5 @@
 {
-  "name": "exercise-02",
+  "name": "exercise-03",
   "version": "1.0.0",
   "private": true,
   "description": "",
@@ -14,7 +14,7 @@
     "htmllint": "git+https://github.com/htmllint/htmllint.git",
     "jest-image-snapshot": "^1.0.1",
     "md5": "^2.2.1",
-    "stylelint": "^8.0.0",
+    "stylelint": "^8.4.0",
     "stylelint-config-recommended": "^1.0.0"
   },
   "stylelint": {
